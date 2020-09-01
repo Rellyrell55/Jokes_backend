@@ -1,4 +1,3 @@
 Rails.application.routes.draw do
-  resources :jokes
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :jokes, only: %i[index show]
 end
