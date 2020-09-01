@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_09_01_162314) do
 
   create_table "jokes", force: :cascade do |t|
-    t.string "type"
+    t.string "category"
     t.text "setup"
     t.text "punchline"
     t.datetime "created_at", precision: 6, null: false
