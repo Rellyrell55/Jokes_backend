@@ -1,7 +1,7 @@
 class JokesController < ApplicationController
 
     def index
-        @jokes = Joke.all 
+        @jokes = Joke.all.sample(1)
 
         render json: @jokes 
     end
